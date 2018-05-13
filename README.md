@@ -31,5 +31,5 @@ $ git clone https://github.com/tunguskha/Image-shadow
 ---
 
 ### See it live
-[Image-shadow](https://github.com/tunguskha/Image-shadow/index.html)
+[Image-shadow](https://tunguskha.github.io/Image-shadow/)
 
