@@ -1,4 +1,4 @@
-![Preview](https://raw.githubusercontent.com/tunguskha/Image-shadow/master/assets/imgs/preview.jpg)
+![Preview](https://raw.githubusercontent.com/tunguskha/Image-shadow/master/assets/imgs/Preview.jpg)
 # Image shadow !
 
 Simple and small jquery plugin to display the shadow of the image!
