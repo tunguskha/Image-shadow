@@ -1,0 +1,35 @@
+![Preview](https://raw.githubusercontent.com/tunguskha/Image-shadow/master/assets/imgs/preview.jpg)
+# Image shadow !
+
+Simple and small jquery plugin to display the shadow of the image!
+
+---
+
+### Download Shadow-image
+```
+$ git clone https://github.com/tunguskha/Image-shadow
+```
+
+---
+
+### Import
+```html
+<link rel="stylesheet" href="assets/css/image-shadow.min.css">
+
+<!-- Don't forget to import jQuery -->
+<script src="assets/js/image-shadow.min.js"></script>
+```
+
+### Use it
+```html
+<div class="container-img">
+  <img class="img" src="assets/imgs/halt-and-catch-fire.jpg" alt="">
+  <div class="img-shadow"></div>
+</div>
+```
+
+---
+
+### See it live
+[Image-shadow](https://github.com/tunguskha/Image-shadow/index.html)
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Simple and small jquery plugin to display the shadow of the image!">
+	<meta name="tungu.me">
+
+	<title>Simple and small jquery plugin to display the shadow of the image!</title>
+
+	<link rel="stylesheet" href="https://unpkg.com/reset-css@3.0.0/reset.css">
+	<link rel="stylesheet" href="assets/css/image-shadow.min.css">
+
+	<style>
+		.container{display: grid;padding:2em;grid-template-columns:1fr 1fr 1fr;grid-column-gap:20px;grid-row-gap:20px;justify-items:stretch;align-items:stretch;max-width: 1080px;margin: 0 auto;}
+		h1{text-align:center;font-size:2em; font-family:'system-ui', sans-serif;margin:1em;font-weight:bold; color:#282828;}
+	</style>
+
+</head>
+
+<body>
+	
+	<h1>Image shadow !</h1>
+
+	<div class="container">
+
+		<div class="container-img">
+			<img class="img" src="assets/imgs/halt-and-catch-fire.jpg" alt="">
+			<div class="img-shadow"></div>
+		</div>
+		<div class="container-img">
+			<img class="img" src="assets/imgs/loaded.jpg" alt="">
+			<div class="img-shadow"></div>
+		</div>
+		<div class="container-img">
+			<img class="img" src="assets/imgs/silicon-valley.jpg" alt="">
+			<div class="img-shadow"></div>
+		</div>
+
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="assets/js/image-shadow.min.js"></script>
+
+</body>
+
+</html>
