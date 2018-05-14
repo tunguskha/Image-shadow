@@ -4,12 +4,10 @@
  * Released under the MIT License.
  */
 
-$(".img").each(function (e) {
-	var imgSrc = $(this).attr("src");
-
-	$(".img-shadow")
-		.eq(e)
-		.css({
-			"background-image": "url(" + imgSrc + ")"
-		});
-});
+document.querySelectorAll(".img").forEach(function(el, index) {
+	var src = el.getAttribute("src");
+	var shadowElement = document.querySelectorAll(".img-shadow")[index];
+	if (!shadowElement) return;
+	shadowElement.style.backgroundImage = "url(" + src + ")";
+  });
+  
