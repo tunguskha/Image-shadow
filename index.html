@@ -2,42 +2,40 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Simple and small Javascript plugin to display the shadow of the image!">
-	<meta name="tungu.me">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Simple and small Javascript plugin to display the shadow of the image!">
+  <meta name="tungu.me">
 
-	<title>Simple and small Javascript plugin to display the shadow of the image!</title>
+  <title>Simple and small Javascript plugin to display the shadow of the image!</title>
 
-	<link rel="stylesheet" href="https://unpkg.com/reset-css@3.0.0/reset.css">
-	<link rel="stylesheet" href="assets/css/image-shadow.css">
-
-	<style>
-		.container{display: grid;padding:2em;grid-template-columns:1fr 1fr 1fr;grid-column-gap:20px;grid-row-gap:80px;justify-items:stretch;align-items:stretch;max-width: 1080px;margin: 0 auto;}
-		h1{text-align:center;font-size:2em; font-family:'system-ui', sans-serif;margin:1em;font-weight:bold; color:#282828;}@media screen and (max-width: 640px){.container{grid-template-columns:1fr;grid-template-rows:1fr 1fr 1fr;}}
-	</style>
+  <style>
+    /*DEMO CSS*/
+    body{margin:0;line-height:1}img{max-width:100%}.container{display:grid;padding:2em;grid-template-columns:1fr 1fr 1fr;grid-column-gap:20px;grid-row-gap:80px;justify-items:stretch;align-items:stretch;max-width:1080px;margin:0 auto}h1{text-align:center;font-size:2em;font-family:system-ui,sans-serif;margin:1em;font-weight:700;color:#282828}@media screen and (max-width:640px){.container{grid-template-columns:1fr;grid-template-rows:1fr 1fr 1fr; margin-bottom:50px}}
+  </style>
 
 </head>
 
 <body>
+  <a href="https://github.com/tunguskha/Image-shadow"><img style="position:absolute;top:0;right:0;border:0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
-<h1>Image shadow !</h1>
+  <h1>Image shadow !</h1>
 
-<div class="container">
-	<div class="container-img ishadow">
-		<img class="img" data-blur="20" src="assets/imgs/halt-and-catch-fire.jpg">
-	</div>
-	<div class="container-img ishadow">
-		<img class="img" data-blur="20" src="assets/imgs/loaded.jpg">
-	</div>
-	<div class="container-img ishadow">
-		<img class="img" data-blur="20" src="assets/imgs/silicon-valley.jpg">
-	</div>
+  <div class="container">
+    <div class="ishadow">
+      <img class="img" data-blur="20" src="assets/imgs/halt-and-catch-fire.jpg">
+    </div>
+    <div class="ishadow">
+      <img class="img" data-blur="20" src="assets/imgs/loaded.jpg">
+    </div>
+    <div class="ishadow">
+      <img class="img" data-blur="20" src="assets/imgs/silicon-valley.jpg">
+    </div>
 
-</div>
+  </div>
 
-<script src="assets/js/image-shadow.js"></script>
+  <script src="assets/js/image-shadow.min.js"></script>
 
 </body>
 

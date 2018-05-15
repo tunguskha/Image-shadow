@@ -32,7 +32,6 @@ document.querySelectorAll('.ishadow').forEach(function(el) {
 
   const styles = {
     backgroundImage: `url('${imageSource}')`,
-    color: 'blue',
     WebkitFilter: `blur(${blurValue}px)`,
     position: 'absolute',
     backgroundPosition: 'center',
