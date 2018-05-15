@@ -1,2 +1,0 @@
-/* shadow-image.js * <fabien.dutaud@gmail.com> (https://tungu.me) * Released under the MIT License. */
-.container-img{position:relative}img{max-width:100%}.img-shadow{position:absolute;background-position:center;background-repeat:no-repeat;background-size:100%;bottom:-10%;left:5%;width:90%;height:95%;z-index:-1;-webkit-filter:blur(20px);filter:blur(20px)}@supports (-ms-ime-align:auto){.img-shadow{display:none}}@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none){.img-shadow{display:none}}
