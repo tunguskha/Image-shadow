@@ -14,16 +14,14 @@ $ git clone https://github.com/tunguskha/Image-shadow
 
 ### Import
 ```html
-<link rel="stylesheet" href="assets/css/image-shadow.min.css">
-
 <script src="assets/js/image-shadow.min.js"></script>
 ```
 
 ### Use it
+All you need is .ishadow wrapper to the image and blur value in data attribute
 ```html
-<div class="container-img">
-  <img class="img" src="assets/imgs/halt-and-catch-fire.jpg" alt="">
-  <div class="img-shadow"></div>
+<div class="ishadow">
+  <img class="img" data-blur="20" src="assets/imgs/halt-and-catch-fire.jpg">
 </div>
 ```
 
@@ -38,3 +36,4 @@ $ git clone https://github.com/tunguskha/Image-shadow
 
 ### See it live
 [Image-shadow](https://tunguskha.github.io/Image-shadow/)
+
