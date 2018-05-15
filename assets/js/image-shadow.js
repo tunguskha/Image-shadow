@@ -4,6 +4,20 @@
  * Released under the MIT License.
  */
 
+const headCss = '@supports (-ms-ime-align: auto) { .image-shadow { display: none; } } @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .image-shadow { display: none; } }';
+const head = document.head || document.getElementsByTagName('head')[0];
+const style = document.createElement('style');
+
+style.type = 'text/css';
+if (style.styleSheet){
+  style.styleSheet.cssText = headCss;
+} else {
+  style.appendChild(document.createTextNode(headCss));
+}
+
+head.appendChild(style);
+
+
 document.querySelectorAll('.ishadow').forEach(function(el) {
   el.style.position = 'relative';
 
