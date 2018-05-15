@@ -29,6 +29,12 @@ $ git clone https://github.com/tunguskha/Image-shadow
 
 ---
 
+### Support
+| IE | Edge| Firefox | Chrome | Safari | Opera |
+|:-:|:--:|:-:|:-:|:-:|:-:|
+|:x:| :x: |:heavy_check_mark:|:heavy_check_mark:|:question:|:heavy_check_mark:|
+
+---
+
 ### See it live
 [Image-shadow](https://tunguskha.github.io/Image-shadow/)
-
