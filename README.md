@@ -34,6 +34,25 @@ $ git clone https://github.com/tunguskha/Image-shadow
 |:-:|:--:|:-:|:-:|:-:|:-:|
 |:x:| :x: |:heavy_check_mark:|:heavy_check_mark:|:question:|:heavy_check_mark:|
 
+**For Edge Support 17+**
+
+*ATTENTION: Does not work on Edge 16- and display the shadow as a real image.*
+
+```css
+@supports (-ms-ime-align: auto) {
+  img {
+    position: relative;
+    z-index: 1;
+  }
+  .img-shadow {
+    display: block;
+    z-index: 0!important;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+  }
+}
+```
+
 ---
 
 ### See it live
