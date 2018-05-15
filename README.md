@@ -14,7 +14,7 @@ $ git clone https://github.com/tunguskha/Image-shadow
 
 ### Import
 ```html
-<script src="assets/js/image-shadow.min.js"></script>
+<script src="assets/js/image-shadow.js"></script>
 ```
 
 ### Use it
