@@ -1,5 +1,5 @@
 /*
- * shadow-image.js
+ * image-shadow.js
  * <fabien.dutaud@gmail.com> (https://tungu.me)
  * Released under the MIT License.
  */
