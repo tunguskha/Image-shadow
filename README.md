@@ -29,6 +29,7 @@ All you need is .ishadow wrapper to the image and blur value in data attribute
 
 ### Use it for video
 Same as a image, add .vshadow wrapper, and control autoplay and loop in data-attribute.
+
 NOTE: I currently work for video support, it works but it's not the best solution.
 ```html
 <div class="vshadow">
