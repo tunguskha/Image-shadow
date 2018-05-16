@@ -10,7 +10,7 @@
   <title>Simple and small Javascript plugin to display the shadow of the image!</title>
   <style>
     /*DEMO CSS*/
-    body{margin:0;line-height:1}img{max-width:100%}.container{display:grid;padding:2em;grid-template-columns:1fr 1fr 1fr;grid-column-gap:20px;grid-row-gap:80px;justify-items:stretch;align-items:stretch;max-width:1080px;margin:0 auto}h1{text-align:center;font-size:2em;font-family:system-ui,sans-serif;margin:1em;font-weight:700;color:#282828}@media screen and (max-width:640px){.container{grid-template-columns:1fr;grid-template-rows:1fr 1fr 1fr; margin-bottom:50px}}
+    body{margin:0;line-height:1}img{max-width:100%}.container{display:grid;padding:2em;grid-template-columns:1fr 1fr 1fr;grid-column-gap:50px;grid-row-gap:80px;justify-items:stretch;align-items:stretch;max-width:1080px;margin:0 auto}h1{text-align:center;font-size:2em;font-family:system-ui,sans-serif;margin:1em;font-weight:700;color:#282828}video{max-width:100%;}h1 > span{color:#888;font-size:1rem; font-weight: normal;}@media screen and (max-width:640px){.container{grid-template-columns:1fr;grid-template-rows:1fr 1fr 1fr; margin-bottom:50px}}.container-video{display:grid;padding:2em;grid-template-columns:1fr 1fr;grid-column-gap:50px;grid-row-gap:80px;justify-items:stretch;align-items:stretch;max-width:1080px;margin:0 auto}
   </style>
 
 </head>
@@ -18,7 +18,7 @@
 <body>
   <a href="https://github.com/tunguskha/Image-shadow"><img style="position:absolute;top:0;right:0;border:0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
-  <h1>Image shadow !</h1>
+  <h1>Image Shadow !</h1>
 
   <div class="container">
     <div class="ishadow">
@@ -32,7 +32,19 @@
     </div>
   </div>
 
-  <script src="assets/js/image-shadow.min.js"></script>
+  <h1>Video Shadow !<br><span>Partial support, comming soon !</span></h1>
+
+  <div class="container-video">
+    <div class="vshadow">
+			<video autoplay preload loop data-autoplay="true" data-loop="true" data-blur="15" src="assets/videos/video-1.mp4" type="video/mp4"></video>
+		</div>
+    <div class="vshadow">
+			<video autoplay preload loop data-autoplay="true" data-loop="true" data-blur="15" src="assets/videos/video-2.mp4" type="video/mp4"></video>
+		</div>
+  </div>
+
+  <script src="assets/js/image-shadow.js"></script>
+  <script src="assets/js/video-shadow.dev.js"></script>
 </body>
 
 </html>
