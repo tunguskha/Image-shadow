@@ -10,7 +10,7 @@
   <title>Simple and small Javascript plugin to display the shadow of the image!</title>
   <style>
     /*DEMO CSS*/
-    body{margin:0;line-height:1}img{max-width:100%}.container{display:grid;padding:2em;grid-template-columns:1fr 1fr 1fr;grid-column-gap:50px;grid-row-gap:80px;justify-items:stretch;align-items:stretch;max-width:1080px;margin:0 auto}h1{text-align:center;font-size:2em;font-family:system-ui,sans-serif;margin:1em;font-weight:700;color:#282828}h1 > span{color:#888;font-size:1rem; font-weight: normal;}@media screen and (max-width:640px){.container{grid-template-columns:1fr;grid-template-rows:1fr 1fr 1fr; margin-bottom:50px}}
+    body{margin:0;line-height:1}img{max-width:100%;border-radius:4px;}.container{display:grid;padding:2em;grid-template-columns:1fr 1fr 1fr;grid-column-gap:50px;grid-row-gap:80px;justify-items:stretch;align-items:stretch;max-width:1080px;margin:0 auto}h1{text-align:center;font-size:2em;font-family:system-ui,sans-serif;margin:1em;font-weight:700;color:#282828}h1 > span{color:#888;font-size:1rem; font-weight: normal;}@media screen and (max-width:640px){.container{grid-template-columns:1fr;grid-template-rows:1fr 1fr 1fr; margin-bottom:50px}}
   </style>
 
 </head>
@@ -22,13 +22,13 @@
 
   <div class="container">
     <div class="ishadow">
-      <img data-blur="20" src="assets/imgs/halt-and-catch-fire.jpg">
+      <img data-blur="20" data-hover="true" src="assets/imgs/halt-and-catch-fire.jpg">
     </div>
     <div class="ishadow">
-      <img data-blur="20" src="assets/imgs/loaded.jpg">
+      <img data-blur="20" data-hover="true" src="assets/imgs/loaded.jpg">
     </div>
     <div class="ishadow">
-      <img data-blur="20" src="assets/imgs/silicon-valley.jpg">
+      <img data-blur="20" data-hover="true" src="assets/imgs/silicon-valley.jpg">
     </div>
   </div>
 
