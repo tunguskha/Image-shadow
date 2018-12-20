@@ -26,9 +26,25 @@ document.querySelectorAll('.ishadow').forEach(function(el) {
   const shadowBox = document.createElement('div');
   const parent = realImage.parentNode;
   const blurValue = realImage.getAttribute('data-blur');
+	const hoverValue = realImage.getAttribute('data-hover');
 
   shadowBox.classList.add('image-shadow');
   parent.insertBefore(shadowBox, realImage.nextSibling);
+	
+	if (hoverValue === 'true') {
+
+		realImage.onmouseover = function (event) {
+			shadowBox.style.left = '0';
+			shadowBox.style.bottom = '-15%';
+			shadowBox.style.width = '100%';
+		};
+
+		realImage.onmouseout = function (event) {
+			shadowBox.style.left = '5%';
+			shadowBox.style.bottom = '-10%';
+			shadowBox.style.width = '90%';
+		};
+	};
 
   const styles = {
     backgroundImage: `url('${imageSource}')`,
@@ -42,6 +58,7 @@ document.querySelectorAll('.ishadow').forEach(function(el) {
     width: '90%',
     height: '95%',
     zIndex: '-1',
+		transition: 'all .4s ease'
   };
 
 
