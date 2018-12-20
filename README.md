@@ -23,23 +23,24 @@ $ git clone https://github.com/tunguskha/Image-shadow
 All you need is .ishadow wrapper to the image and blur value in data attribute
 ```html
 <div class="ishadow">
-  <img class="img" data-blur="20" src="assets/imgs/halt-and-catch-fire.jpg">
+  <img 
+	class="img" 
+	data-blur="20" 
+	src="assets/imgs/halt-and-catch-fire.jpg">
 </div>
 ```
 
-### Use it for video
-Same as a image, add .vshadow wrapper, and control autoplay and loop in data-attribute.
-
-NOTE: I currently work for video support, it works but it's not the best solution.
+Also, you can make an element hoverable by adding `data-hover="true"`.
+`false` by default
 ```html
-<div class="vshadow">
-  <video
-    autoplay preload loop
-    data-autoplay="true" data-loop="true" data-blur="15"
-    src="assets/videos/video-1.mp4" type="video/mp4"></video>
+<div class="ishadow">
+  <img 
+	class="img" 
+	data-blur="20" 
+	data-hover="true" 
+	src="assets/imgs/halt-and-catch-fire.jpg">
 </div>
 ```
-
 ---
 
 ### Support
