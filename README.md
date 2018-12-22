@@ -13,8 +13,13 @@ $ git clone https://github.com/tunguskha/Image-shadow
 ---
 
 ### Import
+Locally
 ```html
 <script src="assets/js/image-shadow.js"></script>
+```
+CDN
+```html
+<script src="https://cdn.jsdelivr.net/gh/tunguskha/Image-shadow@latest/assets/js/image-shadow.js"></script>
 ```
 
 ---
