@@ -33,15 +33,18 @@ document.querySelectorAll(".ishadow").forEach(function (el) {
 
   if (hoverValue === "true") {
     realImage.onmouseover = function (event) {
-      shadowBox.style.left = "0";
-      shadowBox.style.bottom = "-15%";
-      shadowBox.style.width = "100%";
+      shadowBox.style.left = "10%";
+      shadowBox.style.bottom = "-20%";
+      shadowBox.style.width = "80%";
+      realImage.style.transform = "translateY(-5px)";
+      realImage.style.transition = "all .4s ease";
     };
 
     realImage.onmouseout = function (event) {
       shadowBox.style.left = "5%";
       shadowBox.style.bottom = "-10%";
       shadowBox.style.width = "90%";
+      realImage.style.transform = "translateY(0)";
     };
   }
 
