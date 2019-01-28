@@ -1,7 +1,7 @@
 ![Preview](https://raw.githubusercontent.com/tunguskha/Image-shadow/master/assets/imgs/Preview.jpg)
 # Image shadow !
 
-Simple and small Javascript plugin to display the shadow of the image!
+Simple and small Javascript script to display the shadow of the image!
 
 ---
 
