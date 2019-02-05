@@ -29,7 +29,6 @@ All you need is .ishadow wrapper to the image and blur value in data attribute
 ```html
 <div class="ishadow">
   <img 
-	class="img" 
 	data-blur="20" 
 	src="assets/imgs/halt-and-catch-fire.jpg">
 </div>
@@ -40,7 +39,6 @@ Also, you can make an element hoverable by adding `data-hover="true"`.
 ```html
 <div class="ishadow">
   <img 
-	class="img" 
 	data-blur="20" 
 	data-hover="true" 
 	src="assets/imgs/halt-and-catch-fire.jpg">
