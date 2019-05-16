@@ -10,7 +10,7 @@
   <title>Simple and small Javascript plugin to display the shadow of the image!</title>
   <style>
     /*DEMO CSS*/
-    body{margin:0;line-height:1}img{max-width:100%;border-radius:8px;}.container{display:grid;padding:2em;grid-template-columns:1fr 1fr 1fr;grid-column-gap:50px;grid-row-gap:80px;justify-items:stretch;align-items:stretch;max-width:1080px;margin:0 auto}h1{text-align:center;font-size:2em;font-family:system-ui,sans-serif;margin:1em;font-weight:700;color:#282828}h1 > span{color:#888;font-size:1rem; font-weight: normal;}@media screen and (max-width:640px){.container{grid-template-columns:1fr;grid-template-rows:1fr 1fr 1fr; margin-bottom:50px}}
+    body{margin:0;line-height:1}img{max-width:100%;border-radius:8px;}.container{display:grid;padding:2em;grid-template-columns:1fr 1fr 1fr;grid-column-gap:50px;grid-row-gap:80px;max-width:1080px;margin:0 auto}h1{text-align:center;font-size:2em;font-family:system-ui,sans-serif;margin:1em;font-weight:700;color:#282828}h1 > span{color:#888;font-size:1rem; font-weight: normal;}video{max-width:400px;border-radius:8px}video::-webkit-media-controls-panel{border-radius:8px}.video{display:flex;justify-content:center}@media screen and (max-width:700px){.container{grid-template-columns:1fr;grid-template-rows:1fr 1fr 1fr; margin-bottom:50px}video{max-width:100%}}
   </style>
 
 </head>
@@ -22,7 +22,7 @@
 
   <div class="container">
     <div class="ishadow">
-      <img data-blur="20" data-hover="true" src="assets/imgs/halt-and-catch-fire.jpg">
+      <img data-blur="20" data-hover="true" srcset="assets/imgs/halt-and-catch-fire.jpg">
     </div>
     <div class="ishadow">
       <img data-blur="20" data-hover="true" src="assets/imgs/loaded.jpg">
@@ -31,8 +31,21 @@
       <img data-blur="20" data-hover="true" src="assets/imgs/silicon-valley.jpg">
     </div>
   </div>
+  
+  <h1>Video Shadow !</h1>
+  
+  <div class="container video">
+    <div class="v-shadow">
+    <video id="video" data-blur="20" controls>
+    <source src="https:////upload.wikimedia.org/wikipedia/commons/transcoded/1/1c/Joy_%26_Heron_-_Animated_CGI_Spot_by_Passion_Pictures.webm/Joy_%26_Heron_-_Animated_CGI_Spot_by_Passion_Pictures.webm.720p.webm">
+  </video>
 
-  <script src="assets/js/image-shadow.js"></script>
+    <div class="v-clone"></div>
+  </div>
+  </div>
+
+  <script src="assets/js/image-video-shadow.min.js"></script>
+  <script>document.getElementById("video").volume = .15;</script>
 </body>
 
 </html>
