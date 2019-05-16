@@ -4,12 +4,14 @@
  * Released under the MIT License.
  */
 
-const headCss =
+var headCss =
   "@supports (-ms-ime-align: auto) { .image-shadow { display: none; } } @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .image-shadow { display: none; } }";
-const head = document.head || document.getElementsByTagName("head")[0];
-const style = document.createElement("style");
+
+var head = document.head || document.getElementsByTagName("head")[0];
+var style = document.createElement("style");
 
 style.type = "text/css";
+
 if (style.styleSheet) {
   style.styleSheet.cssText = headCss;
 } else {
@@ -21,12 +23,18 @@ head.appendChild(style);
 document.querySelectorAll(".ishadow").forEach(function (el) {
   el.style.position = "relative";
 
-  const realImage = el.getElementsByTagName("img")[0];
-  const imageSource = realImage.getAttribute("src");
-  const shadowBox = document.createElement("div");
-  const parent = realImage.parentNode;
-  const blurValue = realImage.getAttribute("data-blur");
-  const hoverValue = realImage.getAttribute("data-hover");
+  var realImage = el.getElementsByTagName("img")[0];
+  var imageSource = realImage.getAttribute("src");
+  var shadowBox = document.createElement("div");
+  var parent = realImage.parentNode;
+  var blurValue = realImage.getAttribute("data-blur");
+  var hoverValue = realImage.getAttribute("data-hover");
+
+  if (realImage.hasAttribute("src")) {
+    var imageSource = realImage.getAttribute("src");
+  } else {
+    var imageSource = realImage.getAttribute("srcset");
+  }
 
   shadowBox.classList.add("image-shadow");
   parent.insertBefore(shadowBox, realImage.nextSibling);
@@ -48,7 +56,7 @@ document.querySelectorAll(".ishadow").forEach(function (el) {
     };
   }
 
-  const styles = {
+  var styles = {
     backgroundImage: `url('${imageSource}')`,
     WebkitFilter: `blur(${blurValue}px)`,
     position: "absolute",
